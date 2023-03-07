@@ -2,7 +2,7 @@
 
 Selecting difficulty level:- 
 
- <img width="960" alt="Maze-Game1" src="https://user-images.githubusercontent.com/80534075/189458341-829af797-4a9b-4565-8b96-b0949f915954.png">
+ <img width="960" alt="Maze-Game1" src="https://github.com/uma1066nitj/maze-game/blob/main/Images/maze-game1.png">
 
 Created Maze according to difficulty level:-  
 
