@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Maze Game</title>
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="shortcut icon" href="images\apple-touch-icon.png" type="image/x-icon">
+
+    <script src="https://kit.fontawesome.com/0257eae7c4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Noto+Serif&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap" rel="stylesheet">
+
+</head>
+
+<body id="mypage" style="background-color: black;">
+
+    <!-- Title of page -->
+    <div class="bkg">
+        <h1 class="heading-1">Maze Game </h1>
+        
+    </div>
+
+    <!-- Popup after successfull completion -->
+    <div class=" bg-model">
+                <div class="model-content">
+                    <p id="cross" class="cross">+</p>
+                    <img class="popup-image"
+                        src="https://media.istockphoto.com/vectors/first-prize-gold-trophy-iconprize-gold-trophy-winner-first-prize-vector-id1183252990?k=6&m=1183252990&s=612x612&w=0&h=zLvvgS0JMr5vbBQ5vTpHs1mFAw4-aPG2nzwZKsbx8vA="
+                        alt="">
+                    <p style="font-size: 1.6rem;">Congratulations !</p>
+                    <p>You have successfully completed the challenge.</p>
+                    <br>
+                    <button type="button" id="restart" class="btn btn-primary btn-md">Play Again</button>
+                </div>
+        </div>
+
+        <!-- Popup on reloading (instructions) -->
+        <div id="popup-reload">
+            <div class="instruction" style="background-color: black;">
+                <img class="instruction-image"
+                    src="https://thumbs.dreamstime.com/b/hourglass-sign-vector-icon-template-sandclock-sand-clock-time-black-orange-isolated-design-200322610.jpg"
+                    alt="">
+                <!-- For starting timer -->
+                <p style="color: #1DB954;">Try reaching Top left from Bottom right.</p>
+                <p style="color: #1DB954;">Use keys 'w' for moving UP,'a' for Left,'s' for Down,'d' for Right</p>
+                <p style="color: white">Select Difficulty Level-</p>
+                <button id="easy-btn" type="button" class="btn btn-outline-success">Easy</button>
+                <button id="medium-btn" type="button" class="btn btn-outline-primary">Medium</button>
+                <button id="hard-btn" type="button" class="btn btn-outline-danger">Hard</button>
+                <p style="color: #1DB954;">Note:- There is a Time limit of 120 seconds. </p>
+
+
+                <!-- <button id="btn-timer" type="button" class="btn btn-primary">Start</button> -->
+            </div>
+        </div>
+
+        <!--(unsuccessful attempt) Solution -->
+        <div id="solution-popup">
+            <div id="sol-content">
+                <img class="sol-image" src="https://st.depositphotos.com/2010047/2004/i/950/depositphotos_20044639-stock-photo-3d-small-all-is-well.jpg" alt="">
+                <p>Didn't get the right path !!</p>
+                <p>No problem, We will help You.</p>
+                <p>Have a look at the solution by proceeding below</p>
+                <button type="button" class="btn btn-dark " id="btn-ans" >Solution</button>
+            </div>
+        </div>
+        <!-- For Clock -->
+        <div id="timer-val">
+            <span id="min-tens" class="seconds">0</span>
+            <span id="min-ones" class="seconds">0</span>
+            <span class="seconds dot">:</span>
+            <span id="tens" class="seconds">0</span>
+            <span id="ones" class="seconds">0</span>
+        </div>
+
+        <!-- For progress bar -->
+        <div id="outer-div">
+            <div id="timer-bar"></div>
+        </div>
+
+        <div id="try-again">
+            <button id="tryagain-btn" type="button" class="btn btn-outline-primary">Want to Try Again</button>
+        </div>
+        <!-- Generating Table -->
+        <section class="back">
+            <table id="tableId"></table>
+        </section>
+
+        <footer style="background-color: black;">
+            <div id="contact" style="background-color: black;">
+                <a href="https://www.linkedin.com/in/uma-shankar-470604197/" target="_blank"><i class="fab fa-linkedin fa-2x" style="padding:20px;color: rgb(29, 102, 236);"></i></a>
+                <a href="https://www.instagram.com/_umashankarjha_/" target="_blank"><i class="fab fa-instagram fa-2x" style="padding: 20px;color: rgb(194, 80, 99);"></i></a>
+                <a href="mailto: umashankarofficial19@gmail.com" target="_blank"><i class="fas fa-envelope fa-2x" style="padding: 20px;"></i></a>
+            </div>
+    
+            <p style=" color:#1DB954; font-weight: bold;font-family: 'Merriweather', serif;">Made With <i class="fa fa-heart" style="font-size:20px;color:red"></i> By Uma Shankar</p>
+        </footer>
+
+        <script src="script.js"></script>
+
+</body>
+
+</html>
